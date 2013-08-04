@@ -1,0 +1,8 @@
+Package: uair
+Version: 1.0
+Maintainer: Michal Rosiak <michal0468@gmail.com>
+Description: U-air
+Section: utilites
+Depends: python-flask
+Architecture: all
+Installed-Size: 5000

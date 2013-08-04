@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    background-image: url(/static/gui/bg3.png);
+    color:#000;
+}
+
+#frame, #file{
+    -moz-box-shadow: 0 12px 15px 15px #555;
+    -webkit-box-shadow: 0 12px 15px 15px #555;
+    box-shadow: 0 12px 15px 5px #555;
+}
+
+#info {
+    background-color: #CCC;
+    background-image: url(/static/gui/bg3_in.png);
+    color:#555;
+    border-color:black;
+}
+
+#file {
+    background-color: white;
+    background-image: url(/static/gui/bg3_in.png);
+}
+
+.button {
+    background-color: #aaa;
+    background-image: url(/static/gui/bg3_in.png);
+    border:1px solid black;
+    color:black;
+}
+
+#file-r {
+    border-color: #303030;
+}
+
+#file-l {
+    border-color: #303030;
+}
+
+#file-lr {
+    border-color: #303030;
+}
+
+#frame {
+    border-color: #303030;
+}

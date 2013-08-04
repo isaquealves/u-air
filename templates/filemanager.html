@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+U-Air {{lt('File explorer')}}
+{% endblock %}
+
+
+{% block content %}
+<div id="file-l">
+    <link rel="stylesheet" href="/static/minimusicplayer.css" />
+
+    <a href="/files?parent=1">
+        <img title="{{lt('Back')}}" style="float:left;margin:2px;" height="32" src="/static/icons/wstecz.png"></img>
+    </a>
+
+    <a href="/files?home=1">
+        <img title="{{lt('Home')}}" style="float:left;margin:2px;" height="32" src="/static/icons/fm/homeicon.png"></img>
+    </a>
+
+    <div class="directory_path">{{session['sciezka']}}</div>
+    <div style="clear:both;"></div>
+
+    <div id="filelistdiv">
+        <ul class="filelist">
+            {% for nazwa in foldery %}
+                <li>
+                    <script>pastefoldericon("{{nazwa}}")</script>
+                    <strong><a class="folderlink" href="/files?folder={{nazwa}}">{{nazwa}}</a></strong>
+                </li>
+            {% endfor %}
+            {% for nazwa in pliki %}
+                <li>
+                    <div class="filecontainer">
+                    <script>pastefileicon("{{nazwa}}")</script>
+                    <a class="filelink" href="#" onclick='selectfile("{{nazwa}}");'>{{nazwa}}</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div id="file-r">
+    <center>
+    <strong><p id="filename">&nbsp;</p></strong>
+    <div id="fileinfo"></div>
+    <div id="previewbar" class="previewbar" style="display:none;">
+        <div id="previewimage" class="preview_image"></div>
+        <div id="previewmusic"></div>
+    </div>
+    <div id="uploadbar" class="uploadbar" style="display:none;">
+        <form method=post action='/upload' enctype='multipart/form-data'>
+            <input type='file' size=10 name='uploadfile'><br/>
+            <input type='submit' value='Send' />
+        </form>
+    </div>
+
+
+
+
+
+    <table align="center">
+        <br>
+        <tr>
+            <td><a class="button" onclick='toggleupload();' href="#">{{lt("Upload")}}</a></td>
+            <td><a id="downlaodbutton" class="button" href="#">{{lt("Download")}}</a></td>
+        </tr>
+        <tr>
+           <td><a class="button" onclick='togglepreview();' href="#">{{lt("Preview")}}</a></td>
+           <td><a class="button" onclick='addtoplaylist();' href="#">{{lt("Add to playlist")}}</a></td>
+        </tr>
+    </table>
+
+    </center>
+</div>
+{% endblock %}

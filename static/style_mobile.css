@@ -1,0 +1,17 @@
+body{
+    height:100% !important;
+}
+
+#filelistdiv{
+    height:100%;
+    overflow:visible;
+}
+
+#file{
+    height:100%;
+}
+
+#playlista-frame {
+    overflow:visible;
+    max-height:100%;
+}

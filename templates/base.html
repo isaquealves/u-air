@@ -1,0 +1,52 @@
+<script>
+
+</script>
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+    <head>
+        <title>{% block title %}U-Air{% endblock %}</title>
+        <link rel="Shortcut icon" href="/static/favicon.png" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="stylesheet" href="/static/theme{{session['theme']}}.css" />
+        <link rel="stylesheet" href="/static/style_mobile.css" media="screen and (-webkit-device-pixel-ratio:0.75)"/>
+        <script src="/static/jquery-1.8.2.min.js"></script>
+        <script src="/static/base64.js"></script>
+        <script src="/static/functions.js"></script>
+        <script src="/static/audiojs/audio.min.js"></script>
+    </head>
+
+<body>
+
+{% block navigation %}
+<div id="frame">
+    <div id="banner" style="background-image:url(/static/gui/banner.png);width:700px;height:150px;"></div>
+
+    <div id="header">
+        <div style="float:left;">
+        <a href="/info" title="{{lt('Informations')}}"><img src="/static/icons/info.png"></img></a>
+        <a href="/files" title="{{lt('File explorer')}}"><img src="/static/icons/folder.png"></img></a>
+        {% if not session["shared"] %}
+        <a href="/music" title="{{lt('Music player')}}"><img src="/static/icons/music.png"></img></a>
+        <a href="/gallery" title="{{lt('Gallery')}}"><img src="/static/icons/gallery.png"></img></a>
+        {% endif %}
+        <a href="/settings" title="{{lt('Settings')}}"><img src="/static/icons/settings.png"></img></a>
+        </div>
+
+        <div style="float:right;margin-right:10px;">
+        <a href="/logout" title="{{lt('Logout')}}"><img src="/static/icons/logout.png"></img></a>
+        </div>
+    </div>
+
+    <div style="clear:both;"></div>
+</div>
+{% endblock %}
+
+{% block maincontent %}
+    <div id="file">
+        {% block content %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+</body>
+</html>

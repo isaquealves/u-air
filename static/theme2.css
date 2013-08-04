@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    background-image: url(/static/gui/bg2.png);
+}
+
+#frame, #file{
+    -moz-box-shadow: 0 12px 15px 15px #555;
+    -webkit-box-shadow: 0 12px 15px 15px #555;
+    box-shadow: 0 12px 15px 5px #555;
+}
+
+#info {
+    background-color: #f3e5e5;
+    border: 1px solid #f07746;
+}
+
+#file {
+    background-color: white;
+    background:url(/static/gui/bg_2.png);
+}
+
+.button {
+    background-color: #303030;
+}
+
+#file-r {
+    border-color: #303030;
+}
+
+#file-l {
+    border-color: #303030;
+}
+
+#file-lr {
+    border-color: #303030;
+}
+
+#frame {
+    border-color: #303030;
+}

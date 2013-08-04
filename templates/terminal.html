@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+U-Air Terminal
+{% endblock %}
+
+
+{% block content %}
+<div id="file-lr">
+<div id="terminal">
+    <div id="terminalcontent">
+    </div>
+    <div>
+        <input type='text' id="commandtext" onclick="triggerenter();" style="width:628px;"></input>
+        <input type='button' onclick="sendterminalcommand();" value="Execute" style="width:60px;"></input>
+    </div>
+</div>
+</div>
+{% endblock %}

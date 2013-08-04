@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=U-Air
+Comment=Browse files remotly
+Exec=/opt/uair/bin/uairlauncher
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=/opt/uair/static/launcher.png
+Categories=Utilities
+Actions=Window1;Window2;
+
+[Desktop Action Window1]
+Name=Start
+Exec=/opt/uair/bin/uairlauncher start
+OnlyShowIn=Unity;
+
+[Desktop Action Window2]
+Name=Stop
+Exec=/opt/uair/bin/uairlauncher stop
+OnlyShowIn=Unity;

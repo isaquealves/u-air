@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+U-Air {{lt('Informations')}}
+{% endblock %}
+
+
+{% block content %}
+<div id="file-lr">
+    <div style="padding:10px;">
+        <div id="info"><img src="static/icons/info1.png"/> {{lt("System info")}}</div>
+        <table border=0>
+        <tr>
+            <td><strong>{{lt("Time")}}</strong></td>
+            <td>{{time}}</td>
+        </tr>
+        <tr>
+            <td><strong>{{lt("Date")}}</strong></td>
+            <td>{{date}}</td>
+        </tr>
+        <tr>
+            <td><strong>{{lt("Uptime")}}&nbsp;</strong></td>
+            <td>{{uptime}}</td>
+        </tr>
+        </table>
+        {% if session["shared"] %}
+        <div id="info"><img src="static/icons/info1.png"/>{{lt("Shared folder")}}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
