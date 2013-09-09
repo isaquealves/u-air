@@ -155,7 +155,9 @@ if CLIMODE:
     #remove pid
     remove_orphaned_pidfile(check_pidfile())
     #load config
-    config=load_config()
+    try:
+        config=load_config()
+    except: pass
     if sys.argv[1]=="start":
         if check_pidfile():
             print("Server already started.")
