@@ -2727,3 +2727,146 @@ LANGS: translation not found:127.0.0.1 - - [09/Sep/2013 19:49:40] "GET /gallery 
 127.0.0.1 - - [09/Sep/2013 19:49:40] "GET /settings HTTP/1.1" 200 -
 127.0.0.1 - - [09/Sep/2013 19:49:41] "GET /logout HTTP/1.1" 302 -
 127.0.0.1 - - [09/Sep/2013 19:49:41] "GET / HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/jquery-1.8.2.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/style_mobile.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/base64.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/theme0.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/functions.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:28] "GET /static/audiojs/audio.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:29] "GET /static/gui/bg0.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:29] "GET /static/gui/field.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:29] "GET /static/gui/bg_0.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "POST / HTTP/1.1" 302 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /info HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /static/icons/info.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /static/icons/folder.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /static/icons/music.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /static/icons/gallery.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /static/icons/logout.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:36] "GET /static/icons/settings.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:37] "GET /static/icons/info1.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:37] "GET /static/gui/banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:37] "GET /static/gui/header.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /files HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /static/minimusicplayer.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /static/icons/wstecz.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /static/icons/fm/homeicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /static/icons/fm/foldericon.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /static/icons/fm/fileicon.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/michal/Pulpit/u-air/loaders.py", line 12, in load_playlist
+    data=json.load(open(path))
+IOError: [Errno 2] No such file or directory: '/home/michal/main_playlist.json'
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /music HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:38] "GET /static/musicplayer.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:39] "GET /gallery HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:29:39] "GET /settings HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:31:34] "GET /settings HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:31:35] "GET /gallery HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/michal/Pulpit/u-air/loaders.py", line 12, in load_playlist
+    data=json.load(open(path))
+IOError: [Errno 2] No such file or directory: '/home/michal/main_playlist.json'
+127.0.0.1 - - [01/Mar/2014 10:31:35] "GET /music HTTP/1.1" 200 -
+LANGS: translation not found: Login
+LANGS: translation not found: Enter password shown in launcher, or enter predefinied one
+LANGS: translation not found: Password
+LANGS: translation not found: Login
+LANGS: translation not found: Informations
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: System info
+LANGS: translation not found: Time
+LANGS: translation not found: Date
+LANGS: translation not found: Uptime
+LANGS: translation not found: File explorer
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Back
+LANGS: translation not found: Home
+LANGS: translation not found: Upload
+LANGS: translation not found: Download
+LANGS: translation not found: Preview
+LANGS: translation not found: Add to playlist
+LANGS: translation not found: Music player
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Playlist is empty. Use filemanager to add songs
+LANGS: translation not found: Gallery
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Gallery path
+LANGS: translation not found: Settings
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Style
+LANGS: translation not found: Default
+LANGS: translation not found: Black
+LANGS: translation not found: White
+LANGS: translation not found: Stripes
+LANGS: translation not found: Language (current
+LANGS: translation not found: English
+LANGS: translation not found: Polish
+LANGS: translation not found: File manager options
+LANGS: translation not found: Show hidden files/folders.
+LANGS: translation not found: Settings
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Style
+LANGS: translation not found: Default
+LANGS: translation not found: Black
+LANGS: translation not found: White
+LANGS: translation not found: Stripes
+LANGS: translation not found: Language (current
+LANGS: translation not found: English
+LANGS: translation not found: Polish
+LANGS: translation not found: File manager options
+LANGS: translation not found: Show hidden files/folders.
+LANGS: translation not found: Gallery
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Gallery path
+LANGS: translation not found: Music player
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music player
+LANGS: translation not found: Gallery
+LANGS: translation not found: Settings
+LANGS: translation not found: Logout
+LANGS: translation not found: Playlist is empty. Use filemanager to add songs
+LANGS: translation not found: File explorer
+LANGS: translation not found: Informations
+LANGS: translation not found: File explorer
+LANGS: translation not found: Music127.0.0.1 - - [01/Mar/2014 10:31:36] "GET /files HTTP/1.1" 200 -
+127.0.0.1 - - [01/Mar/2014 10:31:36] "GET /info HTTP/1.1" 200 -

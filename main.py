@@ -24,8 +24,6 @@ app.register_blueprint(mainviews.bp, url_prefix="")
 app.register_blueprint(musicviews.bp, url_prefix="")
 app.register_blueprint(filemanagerviews.bp, url_prefix="")
 app.register_blueprint(imagesviews.bp, url_prefix="")
-#set session expire time
-app.permanent_session_lifetime=1
 
 app.debug=True
 app.secret_key=SECRET_KEY
